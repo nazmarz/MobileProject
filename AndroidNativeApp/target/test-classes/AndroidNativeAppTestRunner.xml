@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test suite on Android Phone">
+
+    <!--<parameter name="OS" value="Android"/>
+    <parameter name="appType" value="Phone"/>
+    <parameter name="deviceType" value="RealDevice"/>
+    <parameter name="deviceName" value="Asus"/>
+    <parameter name="version" value="5.0"/>
+    <parameter name="moduleName" value="GoogleMap"/>
+    <parameter name="appName" value="gmap.apk"/>-->
+
+    <parameter name="OS" value="Android"/>
+    <parameter name="platformType" value="Phone"/>
+    <parameter name="deviceType" value="Emulator"/>
+    <parameter name="deviceName" value="Android Emulator"/>
+    <parameter name="version" value="9"/>
+    <parameter name="moduleName" value="GoogleMap"/>
+    <!--<parameter name="appName" value="grubhub.apk"/>-->
+    <parameter name="appName" value="mystery.apk"/>
+
+
+    <!--{
+    "platformName": "Android",
+    "platformVersion": "7.0",
+    "deviceName": "Android Emulator",
+    "browserName": "Chrome"
+    }-->
+
+    <test name="Home page" preserve-order="true">
+        <classes>
+            <!--<class name="test.pageobjects.GrubHubHomePageTest"/>-->
+            <!--<class name="test.pageobjects.AddressPageTest"/>-->
+            <!--<class name="test.pageobjects.OrderPageTest"/>-->
+            <!--<class name="test.pageobjects.HomePageTest"/>-->
+            <!--<class name="test.pageobjects.SkipPageTest"/>-->
+            <class name="test.pageobjects.DestinationPageTest"/>
+            <!--<class name="test.pageobjects.BurgerButtonPageTest"/>-->
+            <!--<class name="test.pageobjects.SignInPageTest"/>-->
+
+
+
+        </classes>
+    </test>
+</suite>
